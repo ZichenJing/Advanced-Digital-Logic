@@ -1,0 +1,16 @@
+PB common common T:/Processor_template/common.vhd sub00/vhpl01 1746795244
+EN instructions_rom NULL T:/Processor_template/Instructions_ROM.vhd sub00/vhpl02 1746795245
+EN top_processor_fpga NULL T:/Processor_template/top_processor_FPGA.vhd sub00/vhpl14 1746795257
+AR registers behavioral T:/Processor_template/Registers.vhd sub00/vhpl11 1746795254
+AR top_processor_fpga behavioral T:/Processor_template/top_processor_FPGA.vhd sub00/vhpl15 1746795258
+EN pc NULL T:/Processor_template/PC.vhd sub00/vhpl08 1746795251
+AR decoder behavioral T:/Processor_template/Decoder.vhd sub00/vhpl05 1746795248
+PH common NULL T:/Processor_template/common.vhd sub00/vhpl00 1746795243
+AR instructions_rom behavioral T:/Processor_template/Instructions_ROM.vhd sub00/vhpl03 1746795246
+AR alu behavioral T:/Processor_template/ALU.vhd sub00/vhpl13 1746795256
+EN decoder NULL T:/Processor_template/Decoder.vhd sub00/vhpl04 1746795247
+EN controller NULL T:/Processor_template/Controller.vhd sub00/vhpl06 1746795249
+AR pc behavioral T:/Processor_template/PC.vhd sub00/vhpl09 1746795252
+AR controller behavioral T:/Processor_template/Controller.vhd sub00/vhpl07 1746795250
+EN registers NULL T:/Processor_template/Registers.vhd sub00/vhpl10 1746795253
+EN alu NULL T:/Processor_template/ALU.vhd sub00/vhpl12 1746795255

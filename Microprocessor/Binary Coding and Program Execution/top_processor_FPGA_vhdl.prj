@@ -1,0 +1,8 @@
+vhdl work "T:\Processor_template\common.vhd"
+vhdl work "T:\Processor_template\Registers.vhd"
+vhdl work "T:\Processor_template\PC.vhd"
+vhdl work "T:\Processor_template\Instructions_ROM.vhd"
+vhdl work "T:\Processor_template\Decoder.vhd"
+vhdl work "T:\Processor_template\Controller.vhd"
+vhdl work "T:\Processor_template\ALU.vhd"
+vhdl work "T:\Processor_template\top_processor_FPGA.vhd"

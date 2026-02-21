@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=T:\Processor_template\impact.xsl
+OUTFILE=T:\Processor_template\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=T:\Processor_template
+LICENSE=iMPACT
+USER_INFO=iMPACT

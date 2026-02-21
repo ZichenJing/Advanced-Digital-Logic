@@ -1,0 +1,103 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -3995 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source T:/Processor_template/pa.fromNcd.tcl
+# create_project -name Processor -dir "T:/Processor_template/planAhead_run_1" -part xc3s100ecp132-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "T:/Processor_template/top_processor_FPGA.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {T:/Processor_template} }
+# set_property target_constrs_file "top_processor_FPGA.ucf" [current_fileset -constrset]
+Adding file 'T:/Processor_template/top_processor_FPGA.ucf' to fileset 'constrs_1'
+# add_files [list {top_processor_FPGA.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s100ecp132-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top_processor_FPGA.ngc ...
+WARNING:NetListWriters:298 - No output is written to top_processor_FPGA.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus immediate_sig<10 : 0> on block
+   top_processor_FPGA is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus instruction_sig<14 : 3> on block
+   top_processor_FPGA is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file top_processor_FPGA.edif ...
+ngc2edif: Total memory usage is 4313760 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/Processor.data/cache/top_processor_FPGA_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Processor.data/cache/top_processor_FPGA_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Display_Controller.ngc ...
+WARNING:NetListWriters:298 - No output is written to Display_Controller.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_display_mode_cmp_gt0000_lut<12 :
+   0> on block Display_Controller is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus seg_dec_1000<7 : 0> on block
+   Display_Controller is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Display_Controller.edif ...
+ngc2edif: Total memory usage is 4313936 kilobytes
+
+Reading core file 'T:/Processor_template/Display_Controller.ngc' for (cell view 'Display_Controller', library 'top_processor_FPGA_lib', file 'top_processor_FPGA.ngc')
+Parsing EDIF File [./planAhead_run_1/Processor.data/cache/Display_Controller_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Processor.data/cache/Display_Controller_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [T:/Processor_template/top_processor_FPGA.ucf]
+Finished Parsing UCF File [T:/Processor_template/top_processor_FPGA.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 7053bb14
+link_design: Time (s): elapsed = 00:00:19 . Memory (MB): peak = 593.945 ; gain = 121.207
+# read_xdl -file "T:/Processor_template/top_processor_FPGA.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "top_processor_FPGA" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
+Successfully converted design 'T:\Processor_template\top_processor_FPGA.ncd' to 'T:\Processor_template\top_processor_FPGA.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : T:/Processor_template/top_processor_FPGA.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : T:/Processor_template/top_processor_FPGA.ncd
+INFO: [Designutils 20-671] Placed 1177 instances
+read_xdl: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 593.945 ; gain = 0.000
+# if {[catch {read_twx -name results_1 -file "T:/Processor_template/top_processor_FPGA.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"T:/Processor_template/top_processor_FPGA.twx\": $eInfo"
+# }
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu May 08 21:56:34 2025...
+INFO: [Common 17-83] Releasing license: PlanAhead
